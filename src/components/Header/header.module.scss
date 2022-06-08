@@ -1,0 +1,11 @@
+@import 'styles/_theme';
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 8px 0;
+
+  @media screen and (max-width: $mobile-l) {
+    justify-content: center;
+  }
+}

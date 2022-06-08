@@ -1,0 +1,19 @@
+@import 'styles/_theme';
+
+.link {
+  display: flex;
+  align-items: center;
+  color: #000;
+
+  &:not(:first-of-type) {
+    margin-left: 45px;
+  }
+}
+
+.primary {
+  color: #1890ff;
+}
+
+.icon {
+  margin-right: 10px;
+}
