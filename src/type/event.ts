@@ -1,8 +1,7 @@
-export type Event = {
+export type EventType = {
   id: number;
-  date: Date;
+  date: string;
   title: string;
   description: string;
   image: string;
-  isSubscribe?: false;
 };

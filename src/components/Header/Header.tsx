@@ -4,9 +4,11 @@ import styled from './header.module.scss';
 
 const Header = () => (
   <header className={styled.header}>
-    {links.map((params, index) => (
-      <NavLink key={index} {...params} />
-    ))}
+    <div className={styled.content}>
+      {links.map((params, index) => (
+        <NavLink key={index} {...params} />
+      ))}
+    </div>
   </header>
 );
 

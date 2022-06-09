@@ -3,15 +3,24 @@
 .link {
   display: flex;
   align-items: center;
-  color: #000;
+  padding-bottom: 5px;
+  border-bottom: 2px solid transparent;
+  font-weight: $font-weight-bold;
 
   &:not(:first-of-type) {
     margin-left: 45px;
   }
 }
 
-.primary {
-  color: #1890ff;
+.primary,
+.primary:hover {
+  color: $primary-color;
+  border-color: $primary-color;
+}
+
+.inherit,
+.inherit:hover {
+  color: #000;
 }
 
 .icon {

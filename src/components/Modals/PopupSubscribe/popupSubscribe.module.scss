@@ -1,0 +1,18 @@
+@import 'styles/_theme';
+
+.container {
+  margin: auto;
+  width: 600px;
+  background-color: #fff;
+  box-shadow: $shadow;
+  border-radius: 10px;
+}
+
+.box {
+  padding: 24px;
+}
+
+.input {
+  margin-top: 10px;
+  min-height: 70px;
+}

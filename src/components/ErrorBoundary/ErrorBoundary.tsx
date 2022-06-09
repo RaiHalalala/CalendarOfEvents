@@ -1,4 +1,7 @@
 import React, { Component, ReactNode } from 'react';
+import styled from './errorBoundary.module.scss';
+
+const TITLE_ERROR = 'Что-то пошло не так :(';
 
 interface Props {
   children?: ReactNode;
@@ -18,13 +21,9 @@ class ErrorBoundary extends Component<Props, State> {
     return { hasError: true };
   }
 
-  //   public componentDidCatch(error: Error, errorInfo: ErrorInfo) {
-  //     console.error('Uncaught error:', error, errorInfo);
-  //   }
-
   public render() {
     if (this.state.hasError) {
-      return <h1>Sorry.. there was an error</h1>;
+      return <h1 className={styled.error}>{TITLE_ERROR}</h1>;
     }
 
     return this.props.children;

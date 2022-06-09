@@ -1,0 +1,15 @@
+@import 'styles/_theme';
+
+.wrapper {
+    margin-top: 50px;
+}
+
+.title {
+    font-size: $font-size-s;
+    color: $secondary-color;
+}
+
+.titleBold {
+    font-size: $font-size-s;
+    color: #000;
+}

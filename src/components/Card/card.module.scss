@@ -1,0 +1,39 @@
+@import 'styles/_theme';
+
+.wrapper {
+  border: 1px solid $secondary-color;
+  border-radius: 10px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.title {
+  height: 16px;
+  overflow: hidden;
+  font-weight: $font-weight-bold;
+  &::first-letter {
+    text-transform: uppercase;
+  }
+}
+
+.image {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  @media screen and (max-width: $mobile-l) {
+    height: 210px;
+  }
+  @media screen and (max-width: $tablet) {
+    height: 180px;
+  }
+}
+
+.date {
+  padding: 0 24px;
+  font-weight: $font-weight-bold;
+}

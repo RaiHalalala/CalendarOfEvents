@@ -1,0 +1,11 @@
+@import 'styles/_theme';
+
+.wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button {
+  margin: 35px 0 0 10px;
+  display: inline-block;
+}

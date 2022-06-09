@@ -6,13 +6,12 @@ interface LayoutProps {
   children: React.ReactNode;
 }
 
-const Layout: FC<LayoutProps> = ({ children }: LayoutProps) => {
-  return (
-    <main className={styled.wrapper}>
-      <Header />
-      <section className={styled.section}>{children}</section>
-    </main>
-  );
-};
+const Layout: FC<LayoutProps> = ({ children }: LayoutProps) => (
+  <main className={styled.wrapper}>
+    <Header />
+    {children}
+    <footer className={styled.footer} />
+  </main>
+);
 
 export default Layout;

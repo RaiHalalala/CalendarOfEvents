@@ -1,0 +1,10 @@
+@import 'styles/_theme';
+
+.wrapper {
+    font-size: $font-size-xxs;
+    color: $accent-color;
+    background-color: $accent-background;
+    border: 1px solid $accent-border;
+    border-radius: 2px;
+    padding: 2px;
+}

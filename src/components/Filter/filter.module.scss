@@ -1,0 +1,25 @@
+@import 'styles/_theme';
+
+.wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin: 115px 0 25px;
+
+  @media screen and (max-width: $mobile-l) {
+    margin-top: 75px;
+    justify-content: center;
+  }
+}
+
+.box {
+  width: 200px;
+  &:not(:first-of-type) {
+    margin-left: 10px;
+  }
+}
+
+.container {
+  width: 100px;
+  height: 40px;
+  background-color: aqua;
+}

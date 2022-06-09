@@ -1,0 +1,8 @@
+@import 'styles/_theme';
+
+.error {
+    font-size: $font-size-l;
+    color: $primary-color;
+    font-weight: $font-weight-bold;
+    text-align: center;
+}

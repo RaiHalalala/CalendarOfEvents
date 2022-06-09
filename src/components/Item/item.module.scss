@@ -1,0 +1,57 @@
+@import 'styles/_theme';
+
+.wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 57px;
+  padding: 13px 0;
+
+  &:not(:first-of-type) {
+    border-top: 1px solid $secondary-color;
+  }
+}
+
+.image {
+  width: 38px;
+  height: 38px;
+}
+
+.center {
+  margin-left: 17px;
+}
+
+.title {
+  margin: 0;
+  &::first-letter {
+    text-transform: uppercase;
+  }
+}
+
+.description {
+  margin: 0;
+  color: $secondary-color;
+  &::first-letter {
+    text-transform: uppercase;
+  }
+}
+
+.right {
+  margin-left: auto;
+  color: $secondary-color;
+
+  @media screen and (max-width: $tablet) {
+    border: 1px solid $secondary-color;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.button {
+  @media screen and (max-width: $tablet) {
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
+}

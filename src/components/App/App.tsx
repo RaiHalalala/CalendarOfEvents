@@ -1,17 +1,27 @@
 import React from 'react';
-import { useAppInit } from 'hooks/useAppInit';
-import TodoList from 'components/TodoList';
+import { createTheme, ThemeProvider } from '@mui/material';
 import Routers from 'components/Routers';
 import Layout from 'components/Layout';
+import Loader from 'components/Loader';
 
-const App = () => {
-  const { data } = useAppInit();
-  return (
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: '#1890ff',
+    },
+    secondary: {
+      main: '#bcbcbc',
+    },
+  },
+});
+const App = () => (
+  <ThemeProvider theme={theme}>
     <Layout>
-      <Routers />
-      Hello, App <TodoList data={data} />
+      <React.Suspense fallback={<Loader />}>
+        <Routers />
+      </React.Suspense>
     </Layout>
-  );
-};
+  </ThemeProvider>
+);
 
 export default App;

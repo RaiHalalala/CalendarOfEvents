@@ -1,2 +1,2 @@
-export { EventsState } from './eventsAtom';
-export { CustomersState } from './customersAtom';
+export * from './atom';
+export * from './selector';
