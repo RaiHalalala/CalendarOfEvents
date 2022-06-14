@@ -28,7 +28,11 @@ const Item: FC<ItemProps> = ({
   const { isMobile } = useScreen();
   const [isOpenAttention, setOpenAttention] = useState(false);
   const setList = useSetRecoilState(myEventsList);
-  const DeletedContent = isMobile ? <DeleteOutline /> : DELETED;
+  const DeletedContent = isMobile ? (
+    <DeleteOutline style={{ color: 'black', fontSize: '15px' }} />
+  ) : (
+    DELETED
+  );
   const unsubscribe = () => {
     setOpenAttention(false);
     setList((prev) => prev.filter((el) => el.id !== id));

@@ -8,16 +8,16 @@ interface PopupAttentionProps {
   onAllow: () => void;
 }
 
-const ATTENTION = 'Вы уверены, что хотите отписаться?';
+const ATTENTION = 'Вы уверены, что хотите отказаться?';
 
 const PopupAttention: FC<PopupAttentionProps> = ({
   onClose,
   onAllow,
 }: PopupAttentionProps) => (
-  <div className={styled.container}>
-    <div className={styled.title}>
-      <ErrorOutline color="warning" />
-      <p className={styled.text}>{ATTENTION}</p>
+  <div className={styled.wrapper}>
+    <div className={styled.container}>
+      <ErrorOutline style={{ color: '#FAAD14', fontSize: '24px' }} />
+      <p className={styled.title}>{ATTENTION}</p>
     </div>
     <Buttons onClose={onClose} onAllow={onAllow} />
   </div>

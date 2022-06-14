@@ -12,7 +12,7 @@ const Header: FC<HeaderProps> = ({ onClose }: HeaderProps) => (
   <div className={styled.wrapper}>
     <p className={styled.title}>{TITLE}</p>
     <button type="button" className={styled.close} onClick={onClose}>
-      <Close color="disabled" />
+      <Close style={{ color: 'black', fontSize: '16px' }} />
     </button>
   </div>
 );

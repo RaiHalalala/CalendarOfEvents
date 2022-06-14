@@ -15,14 +15,14 @@ const BUTTON = {
 const Buttons: FC<ButtonsProps> = ({ onClose, onAllow }: ButtonsProps) => (
   <div className={styled.wrapper}>
     <Box className={styled.button}>
-      <Button type="button" variant="outlined" onClick={onClose}>
+      <Button type="button" variant="customOutlined" onClick={onClose}>
         {BUTTON.CANCEL}
       </Button>
     </Box>
     <Box className={styled.button}>
       <Button
         type="submit"
-        variant="contained"
+        variant="custom"
         onClick={() => onAllow && onAllow()}>
         {BUTTON.ALLOW}
       </Button>

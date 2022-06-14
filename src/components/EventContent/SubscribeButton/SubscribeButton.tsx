@@ -19,8 +19,7 @@ const SubscribeButton: FC<SubscribeButtonProps> = ({
   <Box textAlign="end" className={styled.button}>
     <Button
       onClick={onClick}
-      variant="contained"
-      color={!isSubscribe ? 'primary' : 'error'}>
+      variant={!isSubscribe ? 'custom' : 'customDanger'}>
       {!isSubscribe && (
         <img className={styled.arrow} src="/static/arrow.png" alt="arrow" />
       )}

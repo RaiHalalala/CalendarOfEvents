@@ -3,9 +3,14 @@
 .link {
   display: flex;
   align-items: center;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
   border-bottom: 2px solid transparent;
+  color: black;
   font-weight: $font-weight-bold;
+
+  &:hover {
+    color: black;
+  }
 
   &:not(:first-of-type) {
     margin-left: 45px;
@@ -18,11 +23,11 @@
   border-color: $primary-color;
 }
 
-.inherit,
-.inherit:hover {
-  color: #000;
+.primaryIcon {
+  filter: $filter-black-to-primary;
 }
 
 .icon {
   margin-right: 10px;
+  width: 15px;
 }

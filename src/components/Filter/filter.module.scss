@@ -3,19 +3,37 @@
 .wrapper {
   display: flex;
   justify-content: flex-end;
-  margin: 115px 0 25px;
+  margin: 154px 0 25px;
 
   @media screen and (max-width: $mobile-l) {
-    margin-top: 75px;
-    justify-content: center;
+    margin-top: 84px;
   }
 }
 
 .box {
-  width: 200px;
-  &:not(:first-of-type) {
-    margin-left: 10px;
-  }
+  position: relative;
+  background: url('../../../public/static/arrow-down.png') right 12px top 10px no-repeat;
+  background-size: 10px;
+}
+
+.boxTitle {
+  position: absolute;
+  z-index: -1;
+  top: 5px;
+  bottom: 5px;
+  left: 12px;
+  margin: 0;
+  line-height: 22px;
+  text-transform: capitalize;
+}
+
+.boxYear {
+  width: 74px;
+}
+
+.boxMonth {
+  width: 68px;
+  margin-left: 10px;
 }
 
 .container {

@@ -8,5 +8,6 @@
   bottom: 0;
   left: 0;
   display: flex;
-  backdrop-filter: blur(2px);
+  padding: 0 14px;
+  background-color: $background-modal;
 }

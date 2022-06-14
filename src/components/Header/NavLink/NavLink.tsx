@@ -4,13 +4,16 @@ import { clearNumbers } from 'utils/helper';
 import { LinkType } from 'data/links';
 import styled from './navLink.module.scss';
 
-const NavLink: FC<LinkType> = ({ to, setIcon, name }: LinkType) => {
+const NavLink: FC<LinkType> = ({ to, icon, name }: LinkType) => {
   const location = useLocation();
-  const setColor = (to: string): 'primary' | 'inherit' =>
-    clearNumbers(location.pathname) === to ? 'primary' : 'inherit';
+  const setColor = (to: string): 'primary' | '' =>
+    clearNumbers(location.pathname) === to ? 'primary' : '';
   return (
     <Link to={to} className={`${styled.link} ${styled[setColor(to)]}`}>
-      {setIcon(setColor(to), styled.icon)}
+      <img
+        {...icon}
+        className={`${styled.icon} ${styled[`${setColor(to)}Icon`]}`}
+      />
       {name}
     </Link>
   );

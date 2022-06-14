@@ -7,8 +7,8 @@ const Customer: FC<CustomerProps> = ({
   lastName,
 }: CustomerProps) => (
   <div className={styled.wrapper}>
-    <p>{firstName}</p>
-    <p className={styled.lastName}>{lastName}</p>
+    <p className={styled.name}>{firstName}</p>
+    <p className={`${styled.name} ${styled.lastName}`}>{lastName}</p>
   </div>
 );
 

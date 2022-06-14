@@ -14,13 +14,15 @@ const Card: FC<EventType> = ({ id, title, image, date }: EventType) => {
     <div className={styled.wrapper}>
       <div className={styled.header}>
         <p className={styled.title}>{title}</p>
-        <Link to={`/${id}`}>{MORE}</Link>
+        <Link to={`/${id}`} className={styled.link}>
+          {MORE}
+        </Link>
       </div>
 
       <Image
         src={image}
         width="100%"
-        height={isMobile ? '210px' : '250px'}
+        height={isMobile ? 'auto' : '255px'}
         className={styled.image}
         alt={`card-${id}`}
       />

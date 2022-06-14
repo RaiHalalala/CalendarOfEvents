@@ -53,3 +53,8 @@ button:active {
   outline-offset: 1px;
   outline: -webkit-focus-ring-color auto 1px;
 }
+
+//hide text input in modal with date (year & month)
+button.MuiPickersToolbar-penIconButton {
+  display: none;
+}

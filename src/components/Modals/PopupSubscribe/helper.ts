@@ -11,6 +11,6 @@ export const defaultValues = {
 export type Inputs = { label: string; name: 'firstName' | 'lastName' };
 
 export const inputs: Inputs[] = [
-  { label: 'First Name', name: 'firstName' },
-  { label: 'Last Name', name: 'lastName' },
+  { label: 'Имя', name: 'firstName' },
+  { label: 'Фамилия', name: 'lastName' },
 ];

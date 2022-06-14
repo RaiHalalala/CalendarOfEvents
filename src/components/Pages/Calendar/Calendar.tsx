@@ -25,7 +25,7 @@ const Calendar = () => {
             <Box textAlign="center" className={styled.container}>
               <Button
                 onClick={() => setLimit((prev) => prev + LIMIT)}
-                variant="contained">
+                variant="custom">
                 {BUTTON_TITLE}
               </Button>
             </Box>

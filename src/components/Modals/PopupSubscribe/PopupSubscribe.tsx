@@ -1,7 +1,8 @@
 import { FC } from 'react';
 import { useForm, SubmitHandler } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
-import { TextField, Box } from '@mui/material';
+import { Box } from '@mui/material';
+import { CssTextField } from 'ui-custom/CssTextField';
 import { DefaultValues, defaultValues, inputs } from './helper';
 import { EventType } from 'type/event';
 import { schema } from 'utils/schema';
@@ -38,11 +39,10 @@ const PopupSubscribe: FC<PopupSubscribeProps> = ({
         <Item withoutEnd {...paramsItem} />
         {inputs.map(({ label, name }, index) => (
           <Box key={index} className={styled.input}>
-            <TextField
-              id="filled-basic"
+            <CssTextField
+              id="custom-css-outlined-input"
               size="small"
               label={label}
-              variant="filled"
               fullWidth
               {...register(name)}
               error={Boolean(errors[name])}
