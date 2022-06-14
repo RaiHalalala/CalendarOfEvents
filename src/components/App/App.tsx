@@ -3,7 +3,7 @@ import { createTheme, ThemeProvider } from '@mui/material';
 import Routers from 'components/Routers';
 import Layout from 'components/Layout';
 import Loader from 'components/Loader';
-import { palette } from '../../styles/palette';
+import { palette } from 'styles/palette';
 
 declare module '@mui/material' {
   interface ButtonPropsVariantOverrides {

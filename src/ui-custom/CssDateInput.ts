@@ -26,6 +26,7 @@ export const CssDateInput = styled(TextField)({
     right: '13px',
     borderRadius: 0,
     height: '32px',
+    width: '100%',
 
     '& svg': {
       display: 'none',
